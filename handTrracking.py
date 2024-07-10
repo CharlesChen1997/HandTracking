@@ -4,4 +4,10 @@ import mediapipe as mp
 
 cap = cv2.VideoCapture(1)
 
-print("1")
+while True:
+    ret, img = cap.read()
+    if ret:
+        cv2.imshow('img', img)
+
+    if cv2.waitKey(1) == ord('q'):
+        break
