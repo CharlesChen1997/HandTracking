@@ -1,8 +1,8 @@
 import numpy as np
 import cv2
-import mediapipe as mp
+# import mediapipe as mp
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 while True:
     ret, img = cap.read()
